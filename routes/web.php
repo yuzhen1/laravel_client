@@ -20,3 +20,9 @@ Route::post('/md/opssl_encode','MdController@opssl_encode');//openssl加密
 Route::post('/md/private_encode','MdController@private_encode');//非对称性加密    私钥加密
 Route::post('/md/male_encode','MdController@male_encode');//非对称性加密    公钥加密
 Route::post('/md/signature','MdController@signature');   //验签
+
+//注册登录
+Route::get('/login/reg','LoginController@reg');   //注册
+Route::post('/login/reg_do','LoginController@reg_do');
+Route::get('/login/login','LoginController@login');   //登录
+Route::post('/login/login_do','LoginController@login_do');
