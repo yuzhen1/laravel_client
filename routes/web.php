@@ -26,3 +26,6 @@ Route::get('/login/reg','LoginController@reg');   //注册
 Route::post('/login/reg_do','LoginController@reg_do');
 Route::get('/login/login','LoginController@login');   //登录
 Route::post('/login/login_do','LoginController@login_do');
+
+//测试  使用ajax调用接口
+Route::get('/test/test','TestController@test');
